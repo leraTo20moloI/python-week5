@@ -26,3 +26,44 @@ class iphone:
                     
                     def get_specs(self):
                         return f"iPhone {self.__model} - {self.__storage}GB Storage, {self.__battery}mAh Battery"
+
+
+# Activity 2
+ 
+ # Base class
+class Vehicle:
+    def move(self):
+        pass
+    
+    # Subclasses
+    class Car(Vehicle):
+        def move(self):
+            print("Driving")
+            
+            class Plane(Vehicle):
+                def move(self):
+                    print("Flying")
+                    
+                    class Boat(Vehicle):
+                        def move(self):
+                            print("Sailing")
+                            
+                            class Bike(Vehicle):
+                                def move(self):
+                                    print("Pedaling")
+                                    
+                                    # CREATE instances and call move()
+                                    def main():
+                                        vehicles = [
+                                            
+                                            Car(),
+                                            Plane(),
+                                            Boat(),
+                                            Bike()
+                                        ]
+                                        
+                                        for vehicle in vehicles:
+                                            vehicle.move()
+                                            
+                                            if _name__ == "__main__":
+                                                main()
